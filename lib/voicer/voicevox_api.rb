@@ -98,7 +98,7 @@ module Voicer
     def text_to_voice(text, id, core_version: nil, **)
       synthesis(
         fetch_accent_phrases(text, id, core_version: core_version),
-        speaker,
+        id,
         core_version: core_version,
         **
       ).body
